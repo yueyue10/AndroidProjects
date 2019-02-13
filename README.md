@@ -1,2 +1,4 @@
-# AndroidProjects
-android项目收录
+# KnowAll
+
+偶然发现了一个聚合数据的网站可以提供免费和付费的接口
+正好借此机会把自己的MVP框架应用在这个demo上面进行更多练习和尝试
