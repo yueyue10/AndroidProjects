@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#4ABC53</color>
+    <color name="colorPrimaryDark">#32AA53</color>
+    <color name="colorAccent">#1E90FF</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray5a">#5a5a5a</color>
+    <!-- 首页底部tab没选中-->
+    <color name="bottom_tab_tv_color_no">#434343</color>
+    <!-- 首页底部tab选中-->
+    <color name="bottom_tab_tv_color_yes">#1afa29</color>
 </resources>

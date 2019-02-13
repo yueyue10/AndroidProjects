@@ -1,4 +1,7 @@
 <resources>
-    <string name="app_name">KnowAll</string>
+    <string name="app_name">生活百事</string>
     <string name="action_settings">Settings</string>
+    <string name="loading_hint">加载中...</string>
+    <string name="error_tips">暂无数据</string>
+    <string name="reload">重新加载</string>
 </resources>
