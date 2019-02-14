@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#4ABC53</color>
-    <color name="colorPrimaryDark">#32AA53</color>
+    <color name="colorPrimary">#617AB4</color>
+    <color name="colorPrimaryDark">#617AB4</color>
     <color name="colorAccent">#1E90FF</color>
 
     <color name="transparent">#00000000</color>
@@ -10,7 +10,13 @@
     <!-- 首页底部tab没选中-->
     <color name="bottom_tab_tv_color_no">#434343</color>
     <!-- 首页底部tab选中-->
-    <color name="bottom_tab_tv_color_yes">#1afa29</color>
+    <color name="bottom_tab_tv_color_yes">#617AB4</color>
     <color name="black33">#333333</color>
-    <color name="blueWeather">#6199D2</color>
+    <color name="blueWeather">#87CEEB</color>
+    <!-- 备用颜色-->
+    <color name="green1">#1afa29</color>
+    <color name="green2">#4ABC53</color>
+    <color name="green3">#32AA53</color>
+    <color name="blue1">#617AB4</color>
+
 </resources>

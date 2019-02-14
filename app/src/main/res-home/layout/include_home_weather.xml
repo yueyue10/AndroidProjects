@@ -44,13 +44,20 @@
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/weather_iv"
-            android:layout_width="@dimen/dp_30"
-            android:layout_height="@dimen/dp_30"
+            android:id="@+id/weather_iv1"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_10"
+            tools:background="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/weather_iv2"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_gravity="center_vertical"
             android:layout_marginRight="@dimen/dp_20"
-            android:background="@mipmap/icon_weather_lsnow"
             tools:background="@tools:sample/avatars" />
 
         <LinearLayout

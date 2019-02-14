@@ -25,6 +25,7 @@ android {
         main {
             res.srcDirs = [
                     'src/main/res-home',
+                    'src/main/res-weather',
                     'src/main/res-tools',
                     'src/main/res'
             ]
