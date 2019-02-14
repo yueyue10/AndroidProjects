@@ -10,6 +10,7 @@ import com.passion.zyj.knowall.core.bean.main.MainTabBean;
 import com.passion.zyj.knowall.mvp.activity.BaseActivity;
 import com.passion.zyj.knowall.ui.home.HomeFragment;
 import com.passion.zyj.knowall.ui.tools.ToolsFragment;
+import com.passion.zyj.knowall.utils.StatusBarUtil;
 
 import java.util.ArrayList;
 
@@ -32,6 +33,7 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainCon
 
     @Override
     protected void initToolbar() {
+        StatusBarUtil.immersive(this);
         initTab();
         initRecyclerView();
     }

@@ -73,4 +73,9 @@ dependencies {
     api 'pub.devrel:easypermissions:1.0.1'
     //适配器
     api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
+    //SmartRefreshLayout
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+    api 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-14'
+    //banner
+    api 'com.youth.banner:banner:1.4.10'
 }
