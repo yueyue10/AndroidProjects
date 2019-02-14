@@ -1,4 +1,4 @@
-package com.passion.zyj.knowall.ui;
+package com.passion.zyj.knowall.ui.main;
 
 
 import com.passion.zyj.knowall.core.DataManager;

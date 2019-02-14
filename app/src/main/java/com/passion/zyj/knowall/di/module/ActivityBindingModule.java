@@ -2,8 +2,10 @@ package com.passion.zyj.knowall.di.module;
 
 
 import com.passion.zyj.knowall.di.scope.ActivityScoped;
-import com.passion.zyj.knowall.ui.MainActivity;
-import com.passion.zyj.knowall.ui.MainModule;
+import com.passion.zyj.knowall.ui.main.MainActivity;
+import com.passion.zyj.knowall.ui.main.MainModule;
+import com.passion.zyj.knowall.ui.splash.SplashActivity;
+import com.passion.zyj.knowall.ui.splash.SplashModule;
 
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
@@ -17,6 +19,10 @@ import dagger.android.ContributesAndroidInjector;
  */
 @Module
 public abstract class ActivityBindingModule {
+
+    @ActivityScoped
+    @ContributesAndroidInjector(modules = SplashModule.class)
+    abstract SplashActivity splashaAtivity();
 
     @ActivityScoped
     @ContributesAndroidInjector(modules = MainModule.class)

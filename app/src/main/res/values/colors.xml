@@ -11,4 +11,5 @@
     <color name="bottom_tab_tv_color_no">#434343</color>
     <!-- 首页底部tab选中-->
     <color name="bottom_tab_tv_color_yes">#1afa29</color>
+    <color name="black33">#333333</color>
 </resources>

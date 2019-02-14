@@ -1,4 +1,4 @@
-package com.passion.zyj.knowall.ui;
+package com.passion.zyj.knowall.ui.main;
 
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;

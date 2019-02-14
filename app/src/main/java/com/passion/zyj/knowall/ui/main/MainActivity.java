@@ -1,9 +1,12 @@
-package com.passion.zyj.knowall.ui;
+package com.passion.zyj.knowall.ui.main;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
 
 import com.passion.zyj.knowall.R;
 import com.passion.zyj.knowall.core.bean.main.MainTabBean;
@@ -14,10 +17,15 @@ import com.passion.zyj.knowall.utils.StatusBarUtil;
 
 import java.util.ArrayList;
 
+import butterknife.BindView;
 import butterknife.OnClick;
 
 public class MainActivity extends BaseActivity<MainPresenter> implements MainContract.View {
 
+    @BindView(R.id.common_toolbar)
+    Toolbar mToolbar;
+    @BindView(R.id.common_toolbar_title_tv)
+    TextView mTitleTv;
     private String[] mTitles = {"首页", "工具"};
     private int[] mSelectedIcons = {R.mipmap.icon_tab_home_sel, R.mipmap.icon_tab_tools_sel};
     private int[] mNormalIcons = {R.mipmap.icon_tab_home, R.mipmap.icon_tab_tools};
@@ -33,7 +41,11 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainCon
 
     @Override
     protected void initToolbar() {
-        StatusBarUtil.immersive(this);
+        setSupportActionBar(mToolbar);
+        mTitleTv.setText(getString(R.string.app_name));
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        StatusBarUtil.setStatusColor(getWindow(), ContextCompat.getColor(this, R.color.colorPrimaryDark), 1f);
         initTab();
         initRecyclerView();
     }
@@ -89,6 +101,7 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainCon
         if (position >= mFragments.size()) {
             return;
         }
+        mTitleTv.setText(mTitles[position]);
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         Fragment targetFg = mFragments.get(position);
         Fragment lastFg = mFragments.get(mLastFgIndex);
