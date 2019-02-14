@@ -4,6 +4,7 @@ package com.passion.zyj.knowall.core;
 import com.passion.zyj.knowall.core.bean.BaseResponse;
 import com.passion.zyj.knowall.core.bean.CreateNoteResponse;
 import com.passion.zyj.knowall.core.bean.UserInfoBean;
+import com.passion.zyj.knowall.core.bean.home.WeatherBean;
 import com.passion.zyj.knowall.core.http.api.GeeksApis;
 import com.passion.zyj.knowall.core.prefs.PreferenceHelper;
 
@@ -25,6 +26,20 @@ public class DataManager implements GeeksApis, PreferenceHelper {
         mPreferenceHelper = preferencesHelper;
     }
 
+    @Override
+    public Observable<BaseResponse<WeatherBean>> getWeather(String cityname, String key) {
+        return geeksApis.getWeather(cityname, key);
+    }
+
+    @Override
+    public Observable<BaseResponse<UserInfoBean>> getUserInfo(String accountNum) {
+        return geeksApis.getUserInfo(accountNum);
+    }
+
+    @Override
+    public Observable<BaseResponse<CreateNoteResponse>> addNote(String userId, int scenicId, MultipartBody.Part files) {
+        return geeksApis.addNote(userId, scenicId, files);
+    }
 
     //本地缓存
     @Override
@@ -77,13 +92,4 @@ public class DataManager implements GeeksApis, PreferenceHelper {
         return geeksApis.getYzmInfo(phoneNum);
     }
 
-    @Override
-    public Observable<BaseResponse<UserInfoBean>> getUserInfo(String accountNum) {
-        return geeksApis.getUserInfo(accountNum);
-    }
-
-    @Override
-    public Observable<BaseResponse<CreateNoteResponse>> addNote(String userId, int scenicId, MultipartBody.Part files) {
-        return geeksApis.addNote(userId, scenicId, files);
-    }
 }

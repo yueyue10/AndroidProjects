@@ -7,20 +7,20 @@ package com.passion.zyj.knowall.core.http.exception;
 
 public class ServiceException extends Exception {
 
-    private int result;
+    private String result;
     private String message;
 
-    public ServiceException(String message, int result) {
+    public ServiceException(String message, String result) {
         super(message);
         this.message = message;
         this.result = result;
     }
 
-    public int getResult() {
+    public String getResult() {
         return result;
     }
 
-    public void setResult(int result) {
+    public void setResult(String result) {
         this.result = result;
     }
 

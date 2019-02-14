@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
@@ -76,4 +77,8 @@ public abstract class AbstractSimpleFragment extends SupportFragment {
         return recyclerView;
     }
 
+    public void setTextView(int resId, String text) {
+        TextView textView = mView.findViewById(resId);
+        textView.setText(text);
+    }
 }

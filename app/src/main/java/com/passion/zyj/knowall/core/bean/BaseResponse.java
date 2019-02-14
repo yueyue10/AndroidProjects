@@ -7,48 +7,49 @@ package com.passion.zyj.knowall.core.bean;
 
 public class BaseResponse<T> {
 
-    public static final int SUCCESS = 1;
-    public static final int FAIL = 0;
+    public static final int SUCCESS = 0;
+    public static final int FAIL = 1;
 
     /**
-     * 0：成功，1：失败
+     * 200：成功，1：失败
      */
-    private int result;
+    private String resultcode;
 
-    private String message;
+    private String reason;
 
-    private T value;
-    private T object;
+    private int error_code;
 
-    public int getResult() {
+    private T result;
+
+    public String getResultcode() {
+        return resultcode == null ? "" : resultcode;
+    }
+
+    public void setResultcode(String resultcode) {
+        this.resultcode = resultcode;
+    }
+
+    public String getReason() {
+        return reason == null ? "" : reason;
+    }
+
+    public void setReason(String reason) {
+        this.reason = reason;
+    }
+
+    public T getResult() {
         return result;
     }
 
-    public void setResult(int result) {
+    public void setResult(T result) {
         this.result = result;
     }
 
-    public String getMessage() {
-        return message == null ? "" : message;
+    public int getError_code() {
+        return error_code;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public T getValue() {
-        return value;
-    }
-
-    public void setValue(T value) {
-        this.value = value;
-    }
-
-    public T getObject() {
-        return object;
-    }
-
-    public void setObject(T object) {
-        this.object = object;
+    public void setError_code(int error_code) {
+        this.error_code = error_code;
     }
 }

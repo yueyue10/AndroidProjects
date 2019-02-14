@@ -12,4 +12,5 @@
     <!-- 首页底部tab选中-->
     <color name="bottom_tab_tv_color_yes">#1afa29</color>
     <color name="black33">#333333</color>
+    <color name="blueWeather">#6199D2</color>
 </resources>

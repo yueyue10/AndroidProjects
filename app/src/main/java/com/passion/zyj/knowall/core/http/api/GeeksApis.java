@@ -3,6 +3,7 @@ package com.passion.zyj.knowall.core.http.api;
 import com.passion.zyj.knowall.core.bean.BaseResponse;
 import com.passion.zyj.knowall.core.bean.CreateNoteResponse;
 import com.passion.zyj.knowall.core.bean.UserInfoBean;
+import com.passion.zyj.knowall.core.bean.home.WeatherBean;
 
 import io.reactivex.Observable;
 import okhttp3.MultipartBody;
@@ -21,13 +22,19 @@ import retrofit2.http.Query;
 
 public interface GeeksApis {
 
-    String HOST = "http://travel.enn.cn/";//正式环境
+    String HOST = "http://v.juhe.cn/";//正式环境
 
     /**
      * 获取验证码
      */
     @GET("account/sendVerificationCode")
     Observable<BaseResponse<String>> getYzmInfo(@Query("account") String phoneNum);
+
+    /**
+     * 获取验证码
+     */
+    @GET("weather/index")
+    Observable<BaseResponse<WeatherBean>> getWeather(@Query("cityname") String cityname, @Query("key") String key);
 
     /**
      * 获取用户信息接口

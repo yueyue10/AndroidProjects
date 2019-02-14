@@ -4,5 +4,7 @@
     <string name="loading_hint">加载中...</string>
     <string name="error_tips">暂无数据</string>
     <string name="reload">重新加载</string>
+    <string name="http_error">网络异常</string>
+    <string name="json_exception">解析出错</string>
 
 </resources>

@@ -1,8 +1,11 @@
 package com.passion.zyj.knowall.ui.home;
 
+import com.passion.zyj.knowall.component.BaseObserver;
 import com.passion.zyj.knowall.component.RxBus;
+import com.passion.zyj.knowall.component.RxUtils;
 import com.passion.zyj.knowall.core.DataManager;
 import com.passion.zyj.knowall.core.bean.CreateNoteResponse;
+import com.passion.zyj.knowall.core.bean.home.WeatherBean;
 import com.passion.zyj.knowall.mvp.presenter.BasePresenter;
 
 import javax.inject.Inject;
@@ -35,6 +38,19 @@ public class HomePresenter extends BasePresenter<HomeContract.View> implements H
 
     private void refreshScenicInfo(CreateNoteResponse scenicArea) {
 
+    }
+
+    @Override
+    public void getWeather(String cityname) {
+        addSubscribe(mDataManager.getWeather(cityname, "5e4718f626b25b88617f5501a4622983")
+                .compose(RxUtils.rxSchedulerHelper())
+                .compose(RxUtils.handleResult())
+                .subscribeWith(new BaseObserver<WeatherBean>(mView) {
+                    @Override
+                    public void onNext(WeatherBean playWayBootStraps) {
+                        mView.getWeatherSuccess(playWayBootStraps);
+                    }
+                }));
     }
 
 }
