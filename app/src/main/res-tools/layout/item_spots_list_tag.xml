@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/spot_tag_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/dp_8"
+    android:background="@drawable/shape_yellow_bg"
+    android:paddingBottom="@dimen/dp_2"
+    android:paddingLeft="@dimen/dp_6"
+    android:paddingRight="@dimen/dp_6"
+    android:paddingTop="@dimen/dp_2"
+    android:textColor="#FFFFA250"
+    android:textSize="@dimen/sp_10"
+    tools:text="赶海" />

@@ -6,6 +6,7 @@ import com.passion.zyj.knowall.component.RxUtils;
 import com.passion.zyj.knowall.core.DataManager;
 import com.passion.zyj.knowall.core.bean.CreateNoteResponse;
 import com.passion.zyj.knowall.core.bean.home.WeatherBean;
+import com.passion.zyj.knowall.core.bean.tools.FoodList;
 import com.passion.zyj.knowall.core.bean.tools.MenuBean;
 import com.passion.zyj.knowall.mvp.presenter.BasePresenter;
 
@@ -36,6 +37,19 @@ public class ToolsPresenter extends BasePresenter<ToolsContract.View> implements
                     @Override
                     public void onNext(List<MenuBean> menuBeans) {
                         mView.getFoodCategorySuccess(menuBeans);
+                    }
+                }));
+    }
+
+    @Override
+    public void getFoodList(String cid, String pn, String rn) {
+        addSubscribe(mDataManager.getFoodList(null, cid, pn, rn, "9d7643dff84e96088b3ca7ca6e85d026")
+                .compose(RxUtils.rxSchedulerHelper())
+                .compose(RxUtils.handleResult())
+                .subscribeWith(new BaseObserver<FoodList>(mView) {
+                    @Override
+                    public void onNext(FoodList foodList) {
+                        mView.getFoodListSuccess(foodList);
                     }
                 }));
     }

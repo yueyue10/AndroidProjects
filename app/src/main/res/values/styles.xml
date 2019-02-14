@@ -13,7 +13,7 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="AppTheme.TranslucentTheme" parent="AppTheme.NoActionBar"/>
+    <style name="AppTheme.TranslucentTheme" parent="AppTheme.NoActionBar" />
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
@@ -40,4 +40,23 @@
         <item name="android:backgroundDimAmount">0.4</item>
     </style>
 
+    <style name="WrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Wrap_Height_Content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Wrap_Width_Content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="TitleText" parent="@style/WrapContent">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FF484848</item>
+    </style>
 </resources>

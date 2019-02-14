@@ -18,6 +18,11 @@
             android:id="@+id/food_type_rv"
             android:layout_width="@dimen/dp_70"
             android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/food_list_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 </FrameLayout>

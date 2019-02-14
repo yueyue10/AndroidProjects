@@ -4,6 +4,7 @@ import com.passion.zyj.knowall.core.bean.BaseResponse;
 import com.passion.zyj.knowall.core.bean.CreateNoteResponse;
 import com.passion.zyj.knowall.core.bean.UserInfoBean;
 import com.passion.zyj.knowall.core.bean.home.WeatherBean;
+import com.passion.zyj.knowall.core.bean.tools.FoodList;
 import com.passion.zyj.knowall.core.bean.tools.MenuBean;
 
 import java.util.List;
@@ -59,4 +60,12 @@ public interface GeeksApis {
      */
     @GET
     Observable<BaseResponse<List<MenuBean>>> getFoodCategory(@Url String url, @Query("parentid") String parentid, @Query("key") String key);
+
+    /**
+     * 获取菜谱分类
+     * pn 数据返回起始下标，默认0
+     * rn 数据返回条数，最大30，默认10
+     */
+    @GET
+    Observable<BaseResponse<FoodList>> getFoodList(@Url String url, @Query("cid") String cid, @Query("pn") String pn, @Query("rn") String rn, @Query("key") String key);
 }

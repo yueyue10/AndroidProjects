@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Wrap_Height_Content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/dp_16"
+    android:paddingBottom="@dimen/dp_16">
+
+    <ImageView
+        android:id="@+id/food_iv"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        tools:background="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/food_name_tv"
+            style="@style/TitleText"
+            android:textColor="#FF333335"
+            android:textSize="@dimen/sp_16"
+            tools:text="当地渔民玩法带你领略海岛" />
+
+        <TextView
+            android:id="@+id/food_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_9"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textColor="#FF6C6C6C"
+            android:textSize="@dimen/sp_12"
+            tools:text="游客服务中心入口竹筏码头女岩竹筏竹码…" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/food_tags_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8" />
+
+    </LinearLayout>
+</LinearLayout>
