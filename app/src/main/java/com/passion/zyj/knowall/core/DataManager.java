@@ -5,8 +5,11 @@ import com.passion.zyj.knowall.core.bean.BaseResponse;
 import com.passion.zyj.knowall.core.bean.CreateNoteResponse;
 import com.passion.zyj.knowall.core.bean.UserInfoBean;
 import com.passion.zyj.knowall.core.bean.home.WeatherBean;
+import com.passion.zyj.knowall.core.bean.tools.MenuBean;
 import com.passion.zyj.knowall.core.http.api.GeeksApis;
 import com.passion.zyj.knowall.core.prefs.PreferenceHelper;
+
+import java.util.List;
 
 import io.reactivex.Observable;
 import okhttp3.MultipartBody;
@@ -29,6 +32,11 @@ public class DataManager implements GeeksApis, PreferenceHelper {
     @Override
     public Observable<BaseResponse<WeatherBean>> getWeather(String cityname, String key) {
         return geeksApis.getWeather(cityname, key);
+    }
+
+    @Override
+    public Observable<BaseResponse<List<MenuBean>>> getFoodCategory(String url, String parentid, String key) {
+        return geeksApis.getFoodCategory("http://apis.juhe.cn/cook/category", parentid, key);
     }
 
     @Override

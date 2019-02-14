@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scenic_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/select_line"
+        android:layout_width="@dimen/dp_2"
+        android:layout_height="@dimen/dp_14"
+        android:layout_gravity="center_vertical"
+        android:background="@color/colorPrimary"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/scenic_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:gravity="left"
+        android:text="全部景区"
+        android:textColor="#FF333335"
+        android:textSize="@dimen/sp_14"
+        android:textStyle="bold" />
+
+</LinearLayout>
