@@ -1,19 +1,34 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 26
     defaultConfig {
         applicationId "com.passion.zyj.knowall"
         minSdkVersion 15
-        targetSdkVersion 28
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         multiDexEnabled true  // 启用 multiDexEnable 分包编译,解除64K限制
+        vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+    signingConfigs {
+        release {
+            storeFile file('../doc/key.keystore')
+            storePassword "dyjl123"
+            keyAlias "android"
+            keyPassword "dyjl123"
+        }
+    }
     buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+        }
         release {
             minifyEnabled false
+            signingConfig signingConfigs.release
+            buildConfigField "boolean", "LOG_DEBUG", "false"
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -36,12 +51,12 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:cardview-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
-    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:design:26.1.0'
     implementation 'com.android.support:multidex:1.0.1'
     // Dagger dependencies
     annotationProcessor "com.google.dagger:dagger-compiler:2.16"
