@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/food_imtro_tv"
+                style="@style/WrapContentView"
+                android:layout_marginTop="@dimen/dp_12"
+                android:textColor="#FF878789"
+                android:textSize="@dimen/sp_12"
+                tools:text="我最喜欢的一首歌是这样唱的：心情特别好的早上，提前半个小时起床，为心爱的人做一份早餐，让他把我的爱吃完。写得多好啊，就是这首最浪漫的事。我想如果多年以后，你还问我喜欢哪首歌，我仍然会说，就是这首。我所能想到的最浪漫的事就是陪你一起慢慢变老。。。。。 不过现在人们生活节奏的加快，做早餐用不了30分钟了，5分钟搞定。 首先先把鸡蛋在锅中煎着，然后切面包皮，准备其他材料，再把鸡蛋翻个个，冲一杯橙汁。然后组合一下，你看这早餐不是来了？因为奶酪中已经有了牛奶，所以我备了橙汁。你也可以准备其他果汁。" />
+
+            <TextView
+                android:id="@+id/food_tags_tv"
+                style="@style/WrapContentView"
+                android:layout_marginTop="@dimen/dp_12"
+                android:textColor="#FF333335"
+                android:textSize="@dimen/sp_13"
+                android:textStyle="bold"
+                tools:text="早餐;10-20分钟;烤;一般;三明治;蛋白质;快手菜;1-2人;锅子;其他味;1小时-2小时" />
+
+            <TextView
+                android:id="@+id/food_ingredients_tv"
+                style="@style/WrapContentView"
+                android:layout_marginTop="@dimen/dp_12"
+                android:textColor="#FF878789"
+                android:textSize="@dimen/sp_12"
+                tools:text="土司,3片;鸡蛋,1个;火腿,４小片;奶酪,1片" />
+
+            <TextView
+                android:id="@+id/food_burden_tv"
+                style="@style/WrapContentView"
+                android:layout_marginTop="@dimen/dp_12"
+                android:textColor="#FF878789"
+                android:textSize="@dimen/sp_12"
+                tools:text="油,适量;盐,适量" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/stepsRecyclerView"
+                style="@style/WrapHeightContentView"
+                android:layout_marginTop="@dimen/dp_10"
+                android:nestedScrollingEnabled="false"
+                android:paddingBottom="@dimen/dp_20" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -59,4 +59,14 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">#FF484848</item>
     </style>
+
+    <style name="WrapContentView" parent="@style/WrapContent">
+        <item name="android:layout_marginLeft">@dimen/dp_16</item>
+        <item name="android:layout_marginRight">@dimen/dp_16</item>
+    </style>
+
+    <style name="WrapHeightContentView" parent="@style/Wrap_Height_Content">
+        <item name="android:layout_marginLeft">@dimen/dp_16</item>
+        <item name="android:layout_marginRight">@dimen/dp_16</item>
+    </style>
 </resources>

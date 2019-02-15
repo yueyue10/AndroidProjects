@@ -11,6 +11,7 @@ import com.passion.zyj.knowall.core.bean.tools.FoodDetailBean;
 import com.passion.zyj.knowall.core.bean.tools.FoodList;
 import com.passion.zyj.knowall.core.bean.tools.MenuBean;
 import com.passion.zyj.knowall.mvp.fragment.BaseFragment;
+import com.passion.zyj.knowall.utils.JudgeUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -86,7 +87,7 @@ public class ToolsFragment extends BaseFragment<ToolsPresenter> implements Tools
             mPresenter.getFoodList(foodBeans.get(position).getId(), null, null);
         });
         foodListAdapter.setOnItemClickListener((adapter, view, position) -> {
-            showToast(foodDetailBeans.get(position).getTitle());
+            JudgeUtils.startTravelNoteDtAc(_mActivity, foodDetailBeans.get(position));
         });
     }
 

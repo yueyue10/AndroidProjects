@@ -43,6 +43,7 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainCon
     protected void initToolbar() {
         setSupportActionBar(mToolbar);
         mTitleTv.setText(getString(R.string.app_name));
+        mTitleTv.setVisibility(View.VISIBLE);
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         StatusBarUtil.setStatusColor(getWindow(), ContextCompat.getColor(this, R.color.colorPrimaryDark), 1f);

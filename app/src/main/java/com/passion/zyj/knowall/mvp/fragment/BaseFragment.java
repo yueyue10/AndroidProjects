@@ -106,6 +106,11 @@ public abstract class BaseFragment<T extends AbstractPresenter> extends Abstract
     }
 
     @Override
+    public void setTitleBack(String text) {
+
+    }
+
+    @Override
     public void showToast(String message) {
         CommonUtils.showMessage(_mActivity, message);
     }

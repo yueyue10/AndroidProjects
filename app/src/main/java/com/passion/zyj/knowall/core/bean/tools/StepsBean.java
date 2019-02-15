@@ -1,6 +1,8 @@
 package com.passion.zyj.knowall.core.bean.tools;
 
-public class StepsBean {
+import java.io.Serializable;
+
+public class StepsBean implements Serializable {
     /**
      * img : http://img.juhe.cn/cookbook/s/10/909_70d5525103c69d8a.jpg
      * step : 1.鲈鱼一条，开肚洗净

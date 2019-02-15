@@ -1,17 +1,13 @@
 package com.passion.zyj.knowall.mvp.activity;
 
 import android.graphics.Color;
-import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
 import com.passion.zyj.knowall.R;
-import com.passion.zyj.knowall.mvp.presenter.AbstractPresenter;
 import com.passion.zyj.knowall.mvp.view.AbstractView;
 import com.passion.zyj.knowall.utils.CommonUtils;
 import com.passion.zyj.knowall.utils.ScreenUtils;
@@ -19,38 +15,14 @@ import com.passion.zyj.knowall.utils.dialog.ZLoadingDialog;
 
 import java.util.ArrayList;
 
-import javax.inject.Inject;
-
-import dagger.android.AndroidInjection;
-import dagger.android.AndroidInjector;
-import dagger.android.DispatchingAndroidInjector;
-import dagger.android.support.HasSupportFragmentInjector;
 import pub.devrel.easypermissions.EasyPermissions;
 
-/**
- * MVP模式的Base Activity
- *
- * @author quchao
- * @date 2017/11/28
- */
+import static com.passion.zyj.knowall.mvp.activity.BaseActivity.PADDING_ALL;
+import static com.passion.zyj.knowall.mvp.activity.BaseActivity.PADDING_LR;
+import static com.passion.zyj.knowall.mvp.activity.BaseActivity.PADDING_TB;
 
-public abstract class BaseActivity<T extends AbstractPresenter> extends AbstractSimpleActivity implements
-        HasSupportFragmentInjector,
-        AbstractView {
+public abstract class BaseNorActivity extends AbstractSimpleActivity implements AbstractView {
 
-    /**
-     * 左右内边距
-     */
-    public static final int PADDING_LR = 1;
-    /**
-     * 上下内边距
-     */
-    public static final int PADDING_TB = 2;
-    /**
-     * 全部内边距
-     */
-    public static final int PADDING_ALL = 3;
-    public static final int DEFAULT_DP_PADDING = 16;
     /**
      * 页面标签
      */
@@ -59,38 +31,11 @@ public abstract class BaseActivity<T extends AbstractPresenter> extends Abstract
      * 页数
      */
     public int pageNum = 0;
-
-    @Inject
-    DispatchingAndroidInjector<Fragment> mFragmentDispatchingAndroidInjector;
-    @Inject
-    protected T mPresenter;
     protected ZLoadingDialog dialog;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        AndroidInjection.inject(this);
-        super.onCreate(savedInstanceState);
-    }
-
-    @Override
     protected void onViewCreated() {
-        if (mPresenter != null) {
-            mPresenter.attachView(this);
-        }
-    }
 
-    @Override
-    protected void onDestroy() {
-        if (mPresenter != null) {
-            mPresenter.detachView();
-            mPresenter = null;
-        }
-        super.onDestroy();
-    }
-
-    @Override
-    public AndroidInjector<Fragment> supportFragmentInjector() {
-        return mFragmentDispatchingAndroidInjector;
     }
 
     @Override
@@ -147,7 +92,7 @@ public abstract class BaseActivity<T extends AbstractPresenter> extends Abstract
 
     @Override
     public void setTitleBack(String text) {
-        Toolbar toolbar = (Toolbar) findViewById(R.id.common_toolbar);
+        Toolbar toolbar = findViewById(R.id.common_toolbar);
         toolbar.setTitle(text);
         toolbar.setNavigationOnClickListener(v -> finish());
     }
@@ -156,7 +101,6 @@ public abstract class BaseActivity<T extends AbstractPresenter> extends Abstract
         TextView textView = findViewById(resId);
         textView.setText(s);
     }
-
 
     /**
      * 给view设置内边距

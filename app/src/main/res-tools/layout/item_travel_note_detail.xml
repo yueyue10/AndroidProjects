@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Space
+        android:id="@+id/space_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_20"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/travel_note_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:textColor="#FF484848"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/sp_14"
+        android:textStyle="bold"
+        android:visibility="gone"
+        tools:text="丹霞龙虎山、问道上清天" />
+
+    <TextView
+        android:id="@+id/travel_note_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:textColor="#FF484848"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/sp_14"
+        android:visibility="visible"
+        tools:text="龙虎山是道教发源地，正一道创始人张陵曾在此炼丹，传说“丹成而龙虎现，山因得名”。据道来到龙虎山，坐上这里独特的小火车，观赏着这里的美。" />
+
+    <ImageView
+        android:id="@+id/travel_note_iv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        tools:background="@tools:sample/avatars" />
+
+</LinearLayout>

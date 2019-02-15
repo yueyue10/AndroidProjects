@@ -1,8 +1,10 @@
 package com.passion.zyj.knowall.core.bean.tools;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
-public class FoodDetailBean {
+public class FoodDetailBean implements Serializable {
 
     /**
      * id : 909
@@ -22,7 +24,7 @@ public class FoodDetailBean {
     private String ingredients;
     private String burden;
     private List<String> albums;
-    private List<StepsBean> steps;
+    private ArrayList<StepsBean> steps;
 
     public String getId() {
         return id;
@@ -80,11 +82,11 @@ public class FoodDetailBean {
         this.albums = albums;
     }
 
-    public List<StepsBean> getSteps() {
+    public ArrayList<StepsBean> getSteps() {
         return steps;
     }
 
-    public void setSteps(List<StepsBean> steps) {
+    public void setSteps(ArrayList<StepsBean> steps) {
         this.steps = steps;
     }
 

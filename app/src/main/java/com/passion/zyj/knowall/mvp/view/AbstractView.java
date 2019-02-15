@@ -1,8 +1,6 @@
 package com.passion.zyj.knowall.mvp.view;
 
 
-import android.content.Intent;
-
 /**
  * View 基类
  *
@@ -48,6 +46,11 @@ public interface AbstractView {
      * Reload
      */
     void reload();
+
+    /**
+     * 设置标题
+     */
+    void setTitleBack(String text);
 
     /**
      * Show toast

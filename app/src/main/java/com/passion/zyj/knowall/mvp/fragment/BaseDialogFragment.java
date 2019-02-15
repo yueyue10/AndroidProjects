@@ -102,6 +102,10 @@ public abstract class BaseDialogFragment<T extends AbstractPresenter> extends Ab
 
     }
 
+    @Override
+    public void setTitleBack(String text) {
+
+    }
 
     @Override
     public void showToast(String message) {

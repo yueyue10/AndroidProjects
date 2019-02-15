@@ -12,23 +12,29 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.NoActionBar">
 
         <activity
             android:name=".ui.splash.SplashActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:screenOrientation="portrait">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <!--首页界面-->
         <activity
             android:name=".ui.main.MainActivity"
             android:theme="@style/AppTheme.TranslucentTheme" />
-
+        <!--美食详情-->
+        <activity
+            android:name=".ui.tools.fooddt.TravelNoteDtAc"
+            android:screenOrientation="portrait" />
+        <!--图片详情-->
+        <activity
+            android:name=".ui.common.ShowPictureAc"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
