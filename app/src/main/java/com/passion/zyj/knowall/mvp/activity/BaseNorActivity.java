@@ -92,9 +92,13 @@ public abstract class BaseNorActivity extends AbstractSimpleActivity implements 
 
     @Override
     public void setTitleBack(String text) {
-        Toolbar toolbar = findViewById(R.id.common_toolbar);
-        toolbar.setTitle(text);
-        toolbar.setNavigationOnClickListener(v -> finish());
+        try {
+            Toolbar toolbar = findViewById(R.id.common_toolbar);
+            toolbar.setTitle(text);
+            toolbar.setNavigationOnClickListener(v -> finish());
+        } catch (Exception e) {
+
+        }
     }
 
     public void setTextView(int resId, String s) {

@@ -2,11 +2,8 @@ package com.passion.zyj.knowall.ui.common;
 
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -25,15 +22,13 @@ import butterknife.BindView;
  */
 public class ShowPictureAc extends BaseNorActivity {
 
-    @BindView(R.id.title_layout)
-    Toolbar title_layout;
     @BindView(R.id.picture_vp)
     HackyViewPager picture_vp;
     @BindView(R.id.tv_number)
     TextView tv_number;
     SamplePagerAdapter pagerAdapter;
     ArrayList<String> picture_list = new ArrayList<>();
-    int mposition = 0;
+    int mPosition = 0;
     boolean isFull = false;
 
     @Override
@@ -50,17 +45,16 @@ public class ShowPictureAc extends BaseNorActivity {
     protected void initEventAndData() {
         if (getIntent().getStringArrayListExtra("data") != null)
             picture_list = getIntent().getStringArrayListExtra("data");
-        mposition = getIntent().getIntExtra("position", 0);
+        mPosition = getIntent().getIntExtra("position", 0);
         isFull = getIntent().getBooleanExtra("isFull", false);
         process();
-        full(isFull);
     }
 
     private void process() {
-        tv_number.setText(mposition + 1 + "/" + picture_list.size());
+        tv_number.setText(mPosition + 1 + "/" + picture_list.size());
         pagerAdapter = new SamplePagerAdapter(picture_list);
         picture_vp.setAdapter(pagerAdapter);
-        picture_vp.setCurrentItem(mposition);
+        picture_vp.setCurrentItem(mPosition);
         picture_vp.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 
             @Override
@@ -80,22 +74,6 @@ public class ShowPictureAc extends BaseNorActivity {
 
             }
         });
-    }
-
-    private void full(boolean enable) {
-        if (enable) {
-            title_layout.setVisibility(View.GONE);
-            WindowManager.LayoutParams lp = getWindow().getAttributes();
-            lp.flags |= WindowManager.LayoutParams.FLAG_FULLSCREEN;
-            getWindow().setAttributes(lp);
-            getWindow().addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-        } else {
-            title_layout.setVisibility(View.VISIBLE);
-            WindowManager.LayoutParams attr = getWindow().getAttributes();
-            attr.flags &= (~WindowManager.LayoutParams.FLAG_FULLSCREEN);
-            getWindow().setAttributes(attr);
-            getWindow().clearFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-        }
     }
 
     class SamplePagerAdapter extends PagerAdapter {
@@ -119,15 +97,6 @@ public class ShowPictureAc extends BaseNorActivity {
                             .placeholder(R.mipmap.icon_no_data)
                             .error(R.mipmap.icon_no_data))
                     .into(photoView);
-            photoView.setOnClickListener(view -> {
-                if (isFull) {
-                    isFull = false;
-                    full(false);
-                } else {
-                    isFull = true;
-                    full(true);
-                }
-            });
             container.addView(photoView, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
             return photoView;
         }
