@@ -8,6 +8,7 @@ import com.orhanobut.logger.Logger;
 import com.passion.zyj.knowall.R;
 import com.passion.zyj.knowall.core.bean.home.WeatherBean;
 import com.passion.zyj.knowall.mvp.fragment.BaseFragment;
+import com.passion.zyj.knowall.ui.common.CustomViewActivity;
 import com.passion.zyj.knowall.ui.common.LineActivity;
 import com.passion.zyj.knowall.utils.image.ImageResUtil;
 
@@ -38,7 +39,7 @@ public class HomeFragment extends BaseFragment<HomePresenter> implements HomeCon
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.normal_view:
-                startActivity(new Intent(_mActivity, LineActivity.class));
+                startActivity(new Intent(_mActivity, CustomViewActivity.class));
                 break;
         }
     }
