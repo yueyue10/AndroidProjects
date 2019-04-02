@@ -35,6 +35,10 @@
         <activity
             android:name=".ui.common.ShowPictureAc"
             android:screenOrientation="portrait" />
+        <!--图片详情-->
+        <activity
+            android:name=".ui.common.LineActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

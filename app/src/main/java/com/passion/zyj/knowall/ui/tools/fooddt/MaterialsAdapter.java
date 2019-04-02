@@ -36,7 +36,7 @@ public class MaterialsAdapter extends BaseQuickAdapter<String, MaterialsAdapter.
         helper.textView.setGravity(Gravity.LEFT);
         helper.textView.setTextColor(Color.parseColor("#5C5C5E"));
         helper.textView.setBackgroundColor(ContextCompat.getColor(mContext, R.color.white));
-        helper.textView.setPadding(0, ScreenUtils.dip2px(mContext, 5), 0, 0);
+        helper.textView.setPadding(0, 0, 0, ScreenUtils.dip2px(mContext, 5));
     }
 
     class ViewHolder extends BaseViewHolder {

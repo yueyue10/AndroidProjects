@@ -19,5 +19,8 @@
     <color name="green2">#4ABC53</color>
     <color name="green3">#32AA53</color>
     <color name="blue1">#617AB4</color>
+    <color name="color_f2f2f2">#f2f2f2</color>
+    <color name="color_ff4631">#ff4631</color>
+    <color name="color_999999">#999999</color>
 
 </resources>

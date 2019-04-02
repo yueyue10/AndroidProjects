@@ -1,10 +1,18 @@
 package com.passion.zyj.knowall.ui.home;
 
+import android.content.Intent;
+import android.support.v7.widget.CardView;
+import android.view.View;
+
 import com.orhanobut.logger.Logger;
 import com.passion.zyj.knowall.R;
 import com.passion.zyj.knowall.core.bean.home.WeatherBean;
 import com.passion.zyj.knowall.mvp.fragment.BaseFragment;
+import com.passion.zyj.knowall.ui.common.LineActivity;
 import com.passion.zyj.knowall.utils.image.ImageResUtil;
+
+import butterknife.BindView;
+import butterknife.OnClick;
 
 
 /**
@@ -12,6 +20,9 @@ import com.passion.zyj.knowall.utils.image.ImageResUtil;
  */
 
 public class HomeFragment extends BaseFragment<HomePresenter> implements HomeContract.View {
+
+    @BindView(R.id.normal_view)
+    CardView normal_view;
 
     @Override
     protected int getLayoutId() {
@@ -21,6 +32,15 @@ public class HomeFragment extends BaseFragment<HomePresenter> implements HomeCon
     @Override
     protected void initView() {
 
+    }
+
+    @OnClick(R.id.normal_view)
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.normal_view:
+                startActivity(new Intent(_mActivity, LineActivity.class));
+                break;
+        }
     }
 
     @Override
