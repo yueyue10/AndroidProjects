@@ -18,5 +18,5 @@
 
 修改项目地址到AndroidProjects：
 ---
-* https://github.com/yueyue10/AndroidProjects/KnowAll.git
-* git remote set-url origin https://github.com/yueyue10/AndroidProjects/KnowAll.git
+* https://github.com/yueyue10/AndroidProjects.git
+* git remote set-url origin https://github.com/yueyue10/AndroidProjects.git
