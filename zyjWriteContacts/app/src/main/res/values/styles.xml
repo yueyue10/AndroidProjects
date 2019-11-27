@@ -1,0 +1,13 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <!-- 通知栏颜色 -->
+        <item name="colorPrimary">#4074C3</item>
+        <item name="colorPrimaryDark">#4074C3</item>
+        <item name="colorAccent">#4074C3</item>
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+</resources>

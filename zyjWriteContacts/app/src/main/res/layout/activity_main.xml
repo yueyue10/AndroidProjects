@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zyjwritecontacts.MainActivity" >
+
+    <TextView
+        android:id="@+id/write_contacts_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#adb"
+        android:clickable="true"
+        android:padding="5dp"
+        android:text="保存联系人" />
+
+    <TextView
+        android:id="@+id/open_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/write_contacts_tv"
+        android:layout_marginTop="10dp"
+        android:background="#adb"
+        android:clickable="true"
+        android:padding="5dp"
+        android:text="打开摄像头" />
+
+    <TextView
+        android:id="@+id/camera_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/open_camera"
+        android:layout_marginTop="10dp"
+        android:background="#adb"
+        android:clickable="true"
+        android:padding="5dp"
+        android:text="扫描后的结果：" />
+
+</RelativeLayout>
