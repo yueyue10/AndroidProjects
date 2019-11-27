@@ -6,13 +6,13 @@
 
 <div>
 <h2>首页效果------------------------------------工具效果</h2>
-<img src="https://github.com/yueyue10/KnowAll/blob/master/doc/pic_home.jpg?raw=true" width="35%"  />
-<img src="https://github.com/yueyue10/KnowAll/blob/master/doc/pic_tools.jpg?raw=true" width="35%" style="margin-left:10% " />
+<img src="https://github.com/yueyue10/AndroidProjects/blob/master/KnowAll/doc/pic_home.jpg?raw=true" width="35%"  />
+<img src="https://github.com/yueyue10/AndroidProjects/blob/master/KnowAll/doc/pic_tools.jpg?raw=true" width="35%" style="margin-left:10% " />
 </div>
 
 <div>
 <h2>详情界面------------------------------------</h2>
-<img src="https://github.com/yueyue10/KnowAll/blob/master/doc/pic_details.png?raw=true" width="30%"  />
+<img src="https://github.com/yueyue10/AndroidProjects/blob/master/KnowAll/doc/pic_details.png?raw=true" width="30%"  />
 </div>
 
 

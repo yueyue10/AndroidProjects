@@ -121,7 +121,7 @@ From zyjPingMufbl:
 * library_vitamio\src\io\vov\vitamio\provider\MediaStore.java
 * library_vitamio\src\io\vov\vitamio\provider\MiniThumbFile.java
 * library_vitamio\src\io\vov\vitamio\utils\
-* library_vitamio\src\io\vov\vitamio\utils\Base64.java
+* library_vitamio\src\io\vov\vitamio\utils\test.Base64.java
 * library_vitamio\src\io\vov\vitamio\utils\CPU.java
 * library_vitamio\src\io\vov\vitamio\utils\ContextUtils.java
 * library_vitamio\src\io\vov\vitamio\utils\Crypto.java
