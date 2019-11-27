@@ -1,0 +1,122 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .gitignore
+* ImageSelector\
+* ImageSelector\.classpath
+* ImageSelector\.project
+* ImageSelector\.settings\
+* ImageSelector\.settings\org.eclipse.jdt.core.prefs
+* ImageSelector\AndroidManifest.xml
+* ImageSelector\libs\
+* ImageSelector\libs\picasso-2.5.2.jar
+* ImageSelector\project.properties
+* ImageSelector\res\
+* ImageSelector\res\color\
+* ImageSelector\res\color\default_text_color.xml
+* ImageSelector\res\color\folder_text_color.xml
+* ImageSelector\res\drawable-hdpi\
+* ImageSelector\res\drawable-hdpi\ic_launcher.png
+* ImageSelector\res\drawable-mdpi\
+* ImageSelector\res\drawable-mdpi\ic_launcher.png
+* ImageSelector\res\drawable-xhdpi\
+* ImageSelector\res\drawable-xhdpi\btn_back.png
+* ImageSelector\res\drawable-xhdpi\default_check_s.png
+* ImageSelector\res\drawable-xhdpi\ic_launcher.png
+* ImageSelector\res\drawable-xhdpi\ic_menu_back.png
+* ImageSelector\res\drawable-xhdpi\selector_indicator.png
+* ImageSelector\res\drawable-xxhdpi\
+* ImageSelector\res\drawable-xxhdpi\asv.png
+* ImageSelector\res\drawable-xxhdpi\asy.png
+* ImageSelector\res\drawable-xxhdpi\btn_selected.png
+* ImageSelector\res\drawable-xxhdpi\btn_unselected.png
+* ImageSelector\res\drawable-xxhdpi\default_check.png
+* ImageSelector\res\drawable-xxhdpi\default_error.png
+* ImageSelector\res\drawable-xxhdpi\ic_launcher.png
+* ImageSelector\res\drawable-xxhdpi\text_indicator.png
+* ImageSelector\res\drawable\
+* ImageSelector\res\drawable\action_btn.xml
+* ImageSelector\res\layout\
+* ImageSelector\res\layout\activity_default.xml
+* ImageSelector\res\layout\activity_main.xml
+* ImageSelector\res\layout\cmp_customer_actionbar.xml
+* ImageSelector\res\layout\fragment_multi_image.xml
+* ImageSelector\res\layout\list_item_camera.xml
+* ImageSelector\res\layout\list_item_folder.xml
+* ImageSelector\res\layout\list_item_image.xml
+* ImageSelector\res\menu\
+* ImageSelector\res\menu\menu_main.xml
+* ImageSelector\res\values-v11\
+* ImageSelector\res\values-v11\styles.xml
+* ImageSelector\res\values-v14\
+* ImageSelector\res\values-v14\styles.xml
+* ImageSelector\res\values\
+* ImageSelector\res\values\dimens.xml
+* ImageSelector\res\values\strings.xml
+* ImageSelector\res\values\styles.xml
+* ImageSelector\src\
+* ImageSelector\src\me\
+* ImageSelector\src\me\nereo\
+* ImageSelector\src\me\nereo\multi_image_selector\
+* ImageSelector\src\me\nereo\multi_image_selector\MainActivity.java
+* ImageSelector\src\me\nereo\multi_image_selector\MultiImageSelectorActivity.java
+* ImageSelector\src\me\nereo\multi_image_selector\MultiImageSelectorFragment.java
+* ImageSelector\src\me\nereo\multi_image_selector\adapter\
+* ImageSelector\src\me\nereo\multi_image_selector\adapter\FolderAdapter.java
+* ImageSelector\src\me\nereo\multi_image_selector\adapter\ImageGridAdapter.java
+* ImageSelector\src\me\nereo\multi_image_selector\bean\
+* ImageSelector\src\me\nereo\multi_image_selector\bean\Folder.java
+* ImageSelector\src\me\nereo\multi_image_selector\bean\Image.java
+* ImageSelector\src\me\nereo\multi_image_selector\utils\
+* ImageSelector\src\me\nereo\multi_image_selector\utils\FileUtils.java
+* ImageSelector\src\me\nereo\multi_image_selector\utils\TimeUtils.java
+* ImageSelector\src\me\nereo\multi_image_selector\view\
+* ImageSelector\src\me\nereo\multi_image_selector\view\GestureImageView.java
+* ImageSelector\src\me\nereo\multi_image_selector\view\SuperViewPager.java
+* ic_launcher-web.png
+* proguard-project.txt
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In ImageSelector:
+* AndroidManifest.xml => imageSelector\src\main\AndroidManifest.xml
+* libs\picasso-2.5.2.jar => imageSelector\libs\picasso-2.5.2.jar
+* res\ => imageSelector\src\main\res\
+* src\ => imageSelector\src\main\java\
+In zyjTakePhoto:
+* AndroidManifest.xml => zyjTakePhoto\src\main\AndroidManifest.xml
+* res\ => zyjTakePhoto\src\main\res\
+* src\ => zyjTakePhoto\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
