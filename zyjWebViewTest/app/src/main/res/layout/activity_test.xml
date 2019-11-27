@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/blue"
+        android:hint="                      请输入网址："
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@color/green"
+        android:clickable="true"
+        android:padding="5dp"
+        android:text="跳转到WebViewActivity" />
+
+    <TextView
+        android:id="@+id/turn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@color/green"
+        android:clickable="true"
+        android:onClick="jumpToCameraWebViewActivity"
+        android:padding="5dp"
+        android:text="跳转到CameraWebViewActivity" />
+
+    <TextView
+        android:id="@+id/turn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@color/green"
+        android:clickable="true"
+        android:onClick="jumpToWifiActivity"
+        android:padding="5dp"
+        android:text="跳转到WifiActivity" />
+
+</LinearLayout>
