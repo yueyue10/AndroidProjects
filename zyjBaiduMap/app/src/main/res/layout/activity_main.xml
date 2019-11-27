@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zyj.baidumap.MainActivity" >
+
+    <TextView
+        android:id="@+id/getlocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bbutton_danger_disabled"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="地图定位"
+        android:textColor="@color/bbutton_info_pressed_edge"
+        android:textSize="17dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bluegrey" />
+
+    <TextView
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bbutton_danger_disabled"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="覆盖物使用"
+        android:textColor="@color/bbutton_info_pressed_edge"
+        android:textSize="17dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bluegrey" />
+
+    <TextView
+        android:id="@+id/routeline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bbutton_danger_disabled"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="路径规划"
+        android:textColor="@color/bbutton_info_pressed_edge"
+        android:textSize="17dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bluegrey" />
+
+    <TextView
+        android:id="@+id/openbaidu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bbutton_danger_disabled"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="打开百度地图"
+        android:textColor="@color/bbutton_info_pressed_edge"
+        android:textSize="17dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bluegrey" />
+
+    <TextView
+        android:id="@+id/geocoder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bbutton_danger_disabled"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="地理编码与反编码"
+        android:textColor="@color/bbutton_info_pressed_edge"
+        android:textSize="17dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bluegrey" />
+
+    <TextView
+        android:id="@+id/myroute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bbutton_danger_disabled"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="自定义路径规划"
+        android:textColor="@color/bbutton_info_pressed_edge"
+        android:textSize="17dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bluegrey" />
+
+    <TextView
+        android:id="@+id/mroutline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bbutton_danger_disabled"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="项目中的路径规划"
+        android:textColor="@color/bbutton_info_pressed_edge"
+        android:textSize="17dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bluegrey" />
+
+    <TextView
+        android:id="@+id/timepiker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bbutton_danger_disabled"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="timepiker"
+        android:textColor="@color/bbutton_info_pressed_edge"
+        android:textSize="17dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bluegrey" />
+
+    <TextView
+        android:id="@+id/GeometryDemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bbutton_danger_disabled"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="自定义绘制功能"
+        android:textColor="@color/bbutton_info_pressed_edge"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup"
+        android:gravity="center"
+        android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/popup" />
+
+    <Button
+        android:id="@+id/bikebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup"
+        android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        android:textSize="15dp" />
+
+</LinearLayout>
