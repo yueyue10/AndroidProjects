@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.charlie.mpandroidcharttest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".chartactivity.BarChartActivity" />
+        <activity android:name=".chartactivity.TwoBarChartActivity" />
+        <activity android:name=".chartactivity.ThreeBarChartActivity" />
+        <activity android:name=".chartactivity.PositiveNegativeBarChartActivity" />
+        <activity android:name=".chartactivity.LineChartActivity" />
+        <activity android:name=".chartactivity.MultiLineChartActivity" />
+        <activity android:name=".chartactivity.PieChartActivity" />
+        <activity android:name=".chartactivity.CombineChartActivity" />
+        <activity android:name=".chartactivity.CubicLineChartActivity1" />
+        <activity android:name=".chartactivity.CombineChartActivity1" />
+        <activity android:name=".chartactivity.StackedBarActivity" />
+        <activity android:name=".chartactivity.LineChartActivity2" />
+        <activity android:name=".chartactivity.CombineChartActivity2" />
+        <activity android:name=".chartactivity.PieChartActivity1" />
+
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="375" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="667" />
+    </application>
+
+</manifest>

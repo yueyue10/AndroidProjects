@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bar_chart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.charlie.mpandroidcharttest.chartactivity.BarChartActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="可以左右滑动查看更多数据"
+        android:textSize="15sp" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart1"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="17dp" />
+</LinearLayout>

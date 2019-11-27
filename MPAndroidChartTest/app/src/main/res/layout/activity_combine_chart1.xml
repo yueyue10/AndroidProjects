@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_combine_chart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.charlie.mpandroidcharttest.chartactivity.CombineChartActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="***双轴图表里面***\n点击图表可查看自定义marker效果"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="19dp"
+            android:background="#2CBBB3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="营收KPI"
+            android:textColor="#3C3C3D"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.CombinedChart
+        android:id="@+id/combineChart"
+        android:layout_width="match_parent"
+        android:layout_height="329dp"
+        android:background="@android:color/white" />
+</LinearLayout>
