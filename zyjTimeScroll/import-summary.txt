@@ -1,0 +1,90 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* ic_launcher-web.png
+* proguard-project.txt
+* zyjAppInteraction\
+* zyjAppInteraction\.classpath
+* zyjAppInteraction\.project
+* zyjAppInteraction\.settings\
+* zyjAppInteraction\.settings\org.eclipse.jdt.core.prefs
+* zyjAppInteraction\AndroidManifest.xml
+* zyjAppInteraction\ic_launcher-web.png
+* zyjAppInteraction\libs\
+* zyjAppInteraction\libs\android-support-v4.jar
+* zyjAppInteraction\proguard-project.txt
+* zyjAppInteraction\project.properties
+* zyjAppInteraction\res\
+* zyjAppInteraction\res\drawable-hdpi\
+* zyjAppInteraction\res\drawable-hdpi\ic_launcher.png
+* zyjAppInteraction\res\drawable-mdpi\
+* zyjAppInteraction\res\drawable-mdpi\ic_launcher.png
+* zyjAppInteraction\res\drawable-xhdpi\
+* zyjAppInteraction\res\drawable-xhdpi\ic_launcher.png
+* zyjAppInteraction\res\drawable-xxhdpi\
+* zyjAppInteraction\res\drawable-xxhdpi\ic_launcher.png
+* zyjAppInteraction\res\layout\
+* zyjAppInteraction\res\layout\activity_main.xml
+* zyjAppInteraction\res\layout\activity_start.xml
+* zyjAppInteraction\res\menu\
+* zyjAppInteraction\res\menu\main.xml
+* zyjAppInteraction\res\values-v11\
+* zyjAppInteraction\res\values-v11\styles.xml
+* zyjAppInteraction\res\values-v14\
+* zyjAppInteraction\res\values-v14\styles.xml
+* zyjAppInteraction\res\values-w820dp\
+* zyjAppInteraction\res\values-w820dp\dimens.xml
+* zyjAppInteraction\res\values\
+* zyjAppInteraction\res\values\dimens.xml
+* zyjAppInteraction\res\values\strings.xml
+* zyjAppInteraction\res\values\styles.xml
+* zyjAppInteraction\src\
+* zyjAppInteraction\src\com\
+* zyjAppInteraction\src\com\example\
+* zyjAppInteraction\src\com\example\zyjappinteraction\
+* zyjAppInteraction\src\com\example\zyjappinteraction\MainActivity.java
+* zyjAppInteraction\src\com\example\zyjappinteraction\MyService.java
+* zyjAppInteraction\src\com\example\zyjappinteraction\StartActivity.java
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:21.0.3
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* libs\universal-image-loader-1.9.3.jar => app\libs\universal-image-loader-1.9.3.jar
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
