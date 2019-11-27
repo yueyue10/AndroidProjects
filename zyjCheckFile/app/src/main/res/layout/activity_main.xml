@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start_background"
+    android:orientation="vertical"
+    tools:context="com.example.zyjcheckfile.MainActivity" >
+
+    <EditText
+        android:id="@+id/et_folder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入内存卡根目录下的文件夹名字" />
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#cccc"
+        android:clickable="true"
+        android:padding="5dp"
+        android:text="CheckFile" />
+
+    <TextView
+        android:id="@+id/tosecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#cccc"
+        android:clickable="true"
+        android:padding="5dp"
+        android:text="测试在应用图标上添加数字角标" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#abc"
+        android:padding="10dp"
+        android:text="文件夹内的文件有：" />
+
+</LinearLayout>
