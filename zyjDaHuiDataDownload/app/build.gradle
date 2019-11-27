@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "29.0.1"
+
+    defaultConfig {
+        applicationId "com.example.zyjdahuidatadownloads"
+        minSdkVersion 14
+        targetSdkVersion 21
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    api files('libs/universal-image-loader-1.9.3.jar')
+    api project(':xutils_library')
+    api 'com.android.support:support-v4:21.0.3'
+    api 'com.google.code.gson:gson:2.3.1'
+}

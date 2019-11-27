@@ -1,0 +1,347 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* ic_launcher-web.png
+* proguard-project.txt
+* xutils_library\
+* xutils_library\.classpath
+* xutils_library\.project
+* xutils_library\AndroidManifest.xml
+* xutils_library\project.properties
+* xutils_library\src\
+* xutils_library\src\com\
+* xutils_library\src\com\lidroid\
+* xutils_library\src\com\lidroid\xutils\
+* xutils_library\src\com\lidroid\xutils\BitmapUtils.java
+* xutils_library\src\com\lidroid\xutils\DbUtils.java
+* xutils_library\src\com\lidroid\xutils\HttpUtils.java
+* xutils_library\src\com\lidroid\xutils\ViewUtils.java
+* xutils_library\src\com\lidroid\xutils\bitmap\
+* xutils_library\src\com\lidroid\xutils\bitmap\BitmapCacheListener.java
+* xutils_library\src\com\lidroid\xutils\bitmap\BitmapCommonUtils.java
+* xutils_library\src\com\lidroid\xutils\bitmap\BitmapDisplayConfig.java
+* xutils_library\src\com\lidroid\xutils\bitmap\BitmapGlobalConfig.java
+* xutils_library\src\com\lidroid\xutils\bitmap\PauseOnScrollListener.java
+* xutils_library\src\com\lidroid\xutils\bitmap\callback\
+* xutils_library\src\com\lidroid\xutils\bitmap\callback\BitmapLoadCallBack.java
+* xutils_library\src\com\lidroid\xutils\bitmap\callback\BitmapLoadFrom.java
+* xutils_library\src\com\lidroid\xutils\bitmap\callback\BitmapSetter.java
+* xutils_library\src\com\lidroid\xutils\bitmap\callback\DefaultBitmapLoadCallBack.java
+* xutils_library\src\com\lidroid\xutils\bitmap\core\
+* xutils_library\src\com\lidroid\xutils\bitmap\core\AsyncDrawable.java
+* xutils_library\src\com\lidroid\xutils\bitmap\core\BitmapCache.java
+* xutils_library\src\com\lidroid\xutils\bitmap\core\BitmapDecoder.java
+* xutils_library\src\com\lidroid\xutils\bitmap\core\BitmapSize.java
+* xutils_library\src\com\lidroid\xutils\bitmap\download\
+* xutils_library\src\com\lidroid\xutils\bitmap\download\DefaultDownloader.java
+* xutils_library\src\com\lidroid\xutils\bitmap\download\Downloader.java
+* xutils_library\src\com\lidroid\xutils\bitmap\factory\
+* xutils_library\src\com\lidroid\xutils\bitmap\factory\BitmapFactory.java
+* xutils_library\src\com\lidroid\xutils\cache\
+* xutils_library\src\com\lidroid\xutils\cache\FileNameGenerator.java
+* xutils_library\src\com\lidroid\xutils\cache\KeyExpiryMap.java
+* xutils_library\src\com\lidroid\xutils\cache\LruDiskCache.java
+* xutils_library\src\com\lidroid\xutils\cache\LruMemoryCache.java
+* xutils_library\src\com\lidroid\xutils\cache\MD5FileNameGenerator.java
+* xutils_library\src\com\lidroid\xutils\db\
+* xutils_library\src\com\lidroid\xutils\db\annotation\
+* xutils_library\src\com\lidroid\xutils\db\annotation\Check.java
+* xutils_library\src\com\lidroid\xutils\db\annotation\Column.java
+* xutils_library\src\com\lidroid\xutils\db\annotation\Finder.java
+* xutils_library\src\com\lidroid\xutils\db\annotation\Foreign.java
+* xutils_library\src\com\lidroid\xutils\db\annotation\Id.java
+* xutils_library\src\com\lidroid\xutils\db\annotation\NoAutoIncrement.java
+* xutils_library\src\com\lidroid\xutils\db\annotation\NotNull.java
+* xutils_library\src\com\lidroid\xutils\db\annotation\Table.java
+* xutils_library\src\com\lidroid\xutils\db\annotation\Transient.java
+* xutils_library\src\com\lidroid\xutils\db\annotation\Unique.java
+* xutils_library\src\com\lidroid\xutils\db\converter\
+* xutils_library\src\com\lidroid\xutils\db\converter\BooleanColumnConverter.java
+* xutils_library\src\com\lidroid\xutils\db\converter\ByteArrayColumnConverter.java
+* xutils_library\src\com\lidroid\xutils\db\converter\ByteColumnConverter.java
+* xutils_library\src\com\lidroid\xutils\db\converter\CharColumnConverter.java
+* xutils_library\src\com\lidroid\xutils\db\converter\ColumnConverter.java
+* xutils_library\src\com\lidroid\xutils\db\converter\ColumnConverterFactory.java
+* xutils_library\src\com\lidroid\xutils\db\converter\DateColumnConverter.java
+* xutils_library\src\com\lidroid\xutils\db\converter\DoubleColumnConverter.java
+* xutils_library\src\com\lidroid\xutils\db\converter\FloatColumnConverter.java
+* xutils_library\src\com\lidroid\xutils\db\converter\IntegerColumnConverter.java
+* xutils_library\src\com\lidroid\xutils\db\converter\LongColumnConverter.java
+* xutils_library\src\com\lidroid\xutils\db\converter\ShortColumnConverter.java
+* xutils_library\src\com\lidroid\xutils\db\converter\SqlDateColumnConverter.java
+* xutils_library\src\com\lidroid\xutils\db\converter\StringColumnConverter.java
+* xutils_library\src\com\lidroid\xutils\db\sqlite\
+* xutils_library\src\com\lidroid\xutils\db\sqlite\ColumnDbType.java
+* xutils_library\src\com\lidroid\xutils\db\sqlite\CursorUtils.java
+* xutils_library\src\com\lidroid\xutils\db\sqlite\DbModelSelector.java
+* xutils_library\src\com\lidroid\xutils\db\sqlite\FinderLazyLoader.java
+* xutils_library\src\com\lidroid\xutils\db\sqlite\ForeignLazyLoader.java
+* xutils_library\src\com\lidroid\xutils\db\sqlite\Selector.java
+* xutils_library\src\com\lidroid\xutils\db\sqlite\SqlInfo.java
+* xutils_library\src\com\lidroid\xutils\db\sqlite\SqlInfoBuilder.java
+* xutils_library\src\com\lidroid\xutils\db\sqlite\WhereBuilder.java
+* xutils_library\src\com\lidroid\xutils\db\table\
+* xutils_library\src\com\lidroid\xutils\db\table\Column.java
+* xutils_library\src\com\lidroid\xutils\db\table\ColumnUtils.java
+* xutils_library\src\com\lidroid\xutils\db\table\DbModel.java
+* xutils_library\src\com\lidroid\xutils\db\table\Finder.java
+* xutils_library\src\com\lidroid\xutils\db\table\Foreign.java
+* xutils_library\src\com\lidroid\xutils\db\table\Id.java
+* xutils_library\src\com\lidroid\xutils\db\table\KeyValue.java
+* xutils_library\src\com\lidroid\xutils\db\table\Table.java
+* xutils_library\src\com\lidroid\xutils\db\table\TableUtils.java
+* xutils_library\src\com\lidroid\xutils\exception\
+* xutils_library\src\com\lidroid\xutils\exception\BaseException.java
+* xutils_library\src\com\lidroid\xutils\exception\DbException.java
+* xutils_library\src\com\lidroid\xutils\exception\HttpException.java
+* xutils_library\src\com\lidroid\xutils\http\
+* xutils_library\src\com\lidroid\xutils\http\HttpCache.java
+* xutils_library\src\com\lidroid\xutils\http\HttpHandler.java
+* xutils_library\src\com\lidroid\xutils\http\RequestParams.java
+* xutils_library\src\com\lidroid\xutils\http\ResponseInfo.java
+* xutils_library\src\com\lidroid\xutils\http\ResponseStream.java
+* xutils_library\src\com\lidroid\xutils\http\SyncHttpHandler.java
+* xutils_library\src\com\lidroid\xutils\http\callback\
+* xutils_library\src\com\lidroid\xutils\http\callback\DefaultHttpRedirectHandler.java
+* xutils_library\src\com\lidroid\xutils\http\callback\FileDownloadHandler.java
+* xutils_library\src\com\lidroid\xutils\http\callback\HttpRedirectHandler.java
+* xutils_library\src\com\lidroid\xutils\http\callback\RequestCallBack.java
+* xutils_library\src\com\lidroid\xutils\http\callback\RequestCallBackHandler.java
+* xutils_library\src\com\lidroid\xutils\http\callback\StringDownloadHandler.java
+* xutils_library\src\com\lidroid\xutils\http\client\
+* xutils_library\src\com\lidroid\xutils\http\client\DefaultSSLSocketFactory.java
+* xutils_library\src\com\lidroid\xutils\http\client\HttpRequest.java
+* xutils_library\src\com\lidroid\xutils\http\client\RetryHandler.java
+* xutils_library\src\com\lidroid\xutils\http\client\entity\
+* xutils_library\src\com\lidroid\xutils\http\client\entity\BodyParamsEntity.java
+* xutils_library\src\com\lidroid\xutils\http\client\entity\DecompressingEntity.java
+* xutils_library\src\com\lidroid\xutils\http\client\entity\FileUploadEntity.java
+* xutils_library\src\com\lidroid\xutils\http\client\entity\GZipDecompressingEntity.java
+* xutils_library\src\com\lidroid\xutils\http\client\entity\InputStreamUploadEntity.java
+* xutils_library\src\com\lidroid\xutils\http\client\entity\UploadEntity.java
+* xutils_library\src\com\lidroid\xutils\http\client\multipart\
+* xutils_library\src\com\lidroid\xutils\http\client\multipart\FormBodyPart.java
+* xutils_library\src\com\lidroid\xutils\http\client\multipart\HttpMultipart.java
+* xutils_library\src\com\lidroid\xutils\http\client\multipart\HttpMultipartMode.java
+* xutils_library\src\com\lidroid\xutils\http\client\multipart\MIME.java
+* xutils_library\src\com\lidroid\xutils\http\client\multipart\MinimalField.java
+* xutils_library\src\com\lidroid\xutils\http\client\multipart\MinimalFieldHeader.java
+* xutils_library\src\com\lidroid\xutils\http\client\multipart\MultipartEntity.java
+* xutils_library\src\com\lidroid\xutils\http\client\multipart\content\
+* xutils_library\src\com\lidroid\xutils\http\client\multipart\content\AbstractContentBody.java
+* xutils_library\src\com\lidroid\xutils\http\client\multipart\content\ByteArrayBody.java
+* xutils_library\src\com\lidroid\xutils\http\client\multipart\content\ContentBody.java
+* xutils_library\src\com\lidroid\xutils\http\client\multipart\content\ContentDescriptor.java
+* xutils_library\src\com\lidroid\xutils\http\client\multipart\content\FileBody.java
+* xutils_library\src\com\lidroid\xutils\http\client\multipart\content\InputStreamBody.java
+* xutils_library\src\com\lidroid\xutils\http\client\multipart\content\StringBody.java
+* xutils_library\src\com\lidroid\xutils\http\client\util\
+* xutils_library\src\com\lidroid\xutils\http\client\util\URIBuilder.java
+* xutils_library\src\com\lidroid\xutils\http\client\util\URLEncodedUtils.java
+* xutils_library\src\com\lidroid\xutils\task\
+* xutils_library\src\com\lidroid\xutils\task\Priority.java
+* xutils_library\src\com\lidroid\xutils\task\PriorityAsyncTask.java
+* xutils_library\src\com\lidroid\xutils\task\PriorityExecutor.java
+* xutils_library\src\com\lidroid\xutils\task\PriorityObject.java
+* xutils_library\src\com\lidroid\xutils\task\PriorityObjectBlockingQueue.java
+* xutils_library\src\com\lidroid\xutils\task\PriorityRunnable.java
+* xutils_library\src\com\lidroid\xutils\task\TaskHandler.java
+* xutils_library\src\com\lidroid\xutils\util\
+* xutils_library\src\com\lidroid\xutils\util\CharsetUtils.java
+* xutils_library\src\com\lidroid\xutils\util\DoubleKeyValueMap.java
+* xutils_library\src\com\lidroid\xutils\util\IOUtils.java
+* xutils_library\src\com\lidroid\xutils\util\LogUtils.java
+* xutils_library\src\com\lidroid\xutils\util\MimeTypeUtils.java
+* xutils_library\src\com\lidroid\xutils\util\OtherUtils.java
+* xutils_library\src\com\lidroid\xutils\util\PreferencesCookieStore.java
+* xutils_library\src\com\lidroid\xutils\view\
+* xutils_library\src\com\lidroid\xutils\view\EventListenerManager.java
+* xutils_library\src\com\lidroid\xutils\view\ResLoader.java
+* xutils_library\src\com\lidroid\xutils\view\ResType.java
+* xutils_library\src\com\lidroid\xutils\view\ViewFinder.java
+* xutils_library\src\com\lidroid\xutils\view\ViewInjectInfo.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\
+* xutils_library\src\com\lidroid\xutils\view\annotation\ContentView.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\PreferenceInject.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\ResInject.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\ViewInject.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\EventBase.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnChildClick.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnClick.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnCompoundButtonCheckedChange.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnFocusChange.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnGroupClick.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnGroupCollapse.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnGroupExpand.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnItemClick.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnItemLongClick.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnItemSelected.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnKey.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnLongClick.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnNothingSelected.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnPreferenceChange.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnPreferenceClick.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnProgressChanged.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnRadioGroupCheckedChange.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnScroll.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnScrollStateChanged.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnStartTrackingTouch.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnStopTrackingTouch.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnTabChange.java
+* xutils_library\src\com\lidroid\xutils\view\annotation\event\OnTouch.java
+* zyjDownloadList\
+* zyjDownloadList\.classpath
+* zyjDownloadList\.idea\
+* zyjDownloadList\.idea\.name
+* zyjDownloadList\.idea\compiler.xml
+* zyjDownloadList\.idea\copyright\
+* zyjDownloadList\.idea\copyright\profiles_settings.xml
+* zyjDownloadList\.idea\encodings.xml
+* zyjDownloadList\.idea\misc.xml
+* zyjDownloadList\.idea\modules.xml
+* zyjDownloadList\.idea\scopes\
+* zyjDownloadList\.idea\scopes\scope_settings.xml
+* zyjDownloadList\.idea\vcs.xml
+* zyjDownloadList\.idea\workspace.xml
+* zyjDownloadList\.project
+* zyjDownloadList\.settings\
+* zyjDownloadList\.settings\org.eclipse.core.resources.prefs
+* zyjDownloadList\.settings\org.eclipse.jdt.core.prefs
+* zyjDownloadList\AndroidManifest.xml
+* zyjDownloadList\assets\
+* zyjDownloadList\assets\img\
+* zyjDownloadList\assets\img\wallpaper.jpg
+* zyjDownloadList\libs\
+* zyjDownloadList\libs\android-support-v4.jar
+* zyjDownloadList\libs\appcompat_v7.rar
+* zyjDownloadList\local.properties
+* zyjDownloadList\project.properties
+* zyjDownloadList\res\
+* zyjDownloadList\res\drawable-hdpi\
+* zyjDownloadList\res\drawable-hdpi\content_discard.png
+* zyjDownloadList\res\drawable-hdpi\head2_img.png
+* zyjDownloadList\res\drawable-hdpi\ic_launcher.png
+* zyjDownloadList\res\drawable-hdpi\line.png
+* zyjDownloadList\res\drawable-hdpi\rating_good.png
+* zyjDownloadList\res\drawable-ldpi\
+* zyjDownloadList\res\drawable-ldpi\ic_launcher.png
+* zyjDownloadList\res\drawable-mdpi\
+* zyjDownloadList\res\drawable-mdpi\ic_launcher.png
+* zyjDownloadList\res\drawable-xhdpi\
+* zyjDownloadList\res\drawable-xhdpi\ic_launcher.png
+* zyjDownloadList\res\drawable\
+* zyjDownloadList\res\drawable\bitmap.png
+* zyjDownloadList\res\drawable\bitmap_press.png
+* zyjDownloadList\res\drawable\database.png
+* zyjDownloadList\res\drawable\database_press.png
+* zyjDownloadList\res\drawable\http.png
+* zyjDownloadList\res\drawable\http_press.png
+* zyjDownloadList\res\drawable\icon_btimap.xml
+* zyjDownloadList\res\drawable\icon_database.xml
+* zyjDownloadList\res\drawable\icon_http.xml
+* zyjDownloadList\res\drawable\tab_background.9.png
+* zyjDownloadList\res\drawable\tab_item.xml
+* zyjDownloadList\res\drawable\tab_item_press.9.png
+* zyjDownloadList\res\layout\
+* zyjDownloadList\res\layout\bitmap_fragment.xml
+* zyjDownloadList\res\layout\bitmap_item.xml
+* zyjDownloadList\res\layout\db_fragment.xml
+* zyjDownloadList\res\layout\download_item.xml
+* zyjDownloadList\res\layout\download_list.xml
+* zyjDownloadList\res\layout\fragment_test.xml
+* zyjDownloadList\res\layout\http_fragment.xml
+* zyjDownloadList\res\layout\image.xml
+* zyjDownloadList\res\layout\item_test.xml
+* zyjDownloadList\res\layout\main.xml
+* zyjDownloadList\res\layout\manager_group_list_item.xml
+* zyjDownloadList\res\layout\manager_group_list_item_parent.xml
+* zyjDownloadList\res\layout\tab_bottom_nav.xml
+* zyjDownloadList\res\values-zh-rCN\
+* zyjDownloadList\res\values-zh-rCN\strings.xml
+* zyjDownloadList\res\values\
+* zyjDownloadList\res\values\strings.xml
+* zyjDownloadList\src\
+* zyjDownloadList\src\com\
+* zyjDownloadList\src\com\zyj\
+* zyjDownloadList\src\com\zyj\xutils\
+* zyjDownloadList\src\com\zyj\xutils\sample\
+* zyjDownloadList\src\com\zyj\xutils\sample\BitmapHelp.java
+* zyjDownloadList\src\com\zyj\xutils\sample\DownloadListActivity.java
+* zyjDownloadList\src\com\zyj\xutils\sample\ImageActivity.java
+* zyjDownloadList\src\com\zyj\xutils\sample\MyActivity.java
+* zyjDownloadList\src\com\zyj\xutils\sample\adapter\
+* zyjDownloadList\src\com\zyj\xutils\sample\adapter\aaa.java
+* zyjDownloadList\src\com\zyj\xutils\sample\download\
+* zyjDownloadList\src\com\zyj\xutils\sample\download\DownloadInfo.java
+* zyjDownloadList\src\com\zyj\xutils\sample\download\DownloadManager.java
+* zyjDownloadList\src\com\zyj\xutils\sample\download\DownloadService.java
+* zyjDownloadList\src\com\zyj\xutils\sample\entities\
+* zyjDownloadList\src\com\zyj\xutils\sample\entities\Child.java
+* zyjDownloadList\src\com\zyj\xutils\sample\entities\EntityBase.java
+* zyjDownloadList\src\com\zyj\xutils\sample\entities\Parent.java
+* zyjDownloadList\src\com\zyj\xutils\sample\fragment\
+* zyjDownloadList\src\com\zyj\xutils\sample\fragment\BitmapFragment.java
+* zyjDownloadList\src\com\zyj\xutils\sample\fragment\DbFragment.java
+* zyjDownloadList\src\com\zyj\xutils\sample\fragment\HttpFragment.java
+* zyjDownloadList\src\com\zyj\xutils\sample\open\
+* zyjDownloadList\src\com\zyj\xutils\sample\open\FileManager.java
+* zyjDownloadList\src\com\zyj\xutils\sample\open\MyAdapter.java
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:21.0.3
+gson-2.3.1.jar => com.google.code.gson:gson:2.3.1
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In xutils_library:
+* AndroidManifest.xml => xutils_library\src\main\AndroidManifest.xml
+* src\ => xutils_library\src\main\java\
+In zyjDaHuiDataDownload:
+* AndroidManifest.xml => zyjDaHuiDataDownload\src\main\AndroidManifest.xml
+* assets\ => zyjDaHuiDataDownload\src\main\assets\
+* libs\universal-image-loader-1.9.3.jar => zyjDaHuiDataDownload\libs\universal-image-loader-1.9.3.jar
+* res\ => zyjDaHuiDataDownload\src\main\res\
+* src\ => zyjDaHuiDataDownload\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
