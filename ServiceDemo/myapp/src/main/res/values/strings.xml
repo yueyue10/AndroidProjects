@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyAPP</string>
+    <string name="bindApp_title">
+        1.在app模块中的新增IAppServiceRemoteBinder并在ForMyAppService中使用\n
+        2.在myapp模块中新增同样包名同样类名的IAppServiceRemoteBinder\n
+        3.在myapp模块绑定ForMyAppService之后用IAppServiceRemoteBinder.Stub.asInterface(service)获取到IAppServiceRemoteBinder并使用
+    </string>
+</resources>
