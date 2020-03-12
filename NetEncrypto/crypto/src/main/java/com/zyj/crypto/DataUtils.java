@@ -31,9 +31,16 @@ public class DataUtils {
         }
     }
 
+    //一个int对应4个byte
     public static byte[] int2Byte(int data) {
         ByteBuffer buffer = ByteBuffer.allocate(4);
         buffer.putInt(data);
         return buffer.array();
+    }
+
+    //将字节数组转成int类型
+    public static int byte2Int(byte[] data) {
+        ByteBuffer buffer = ByteBuffer.wrap(data);
+        return buffer.getInt();
     }
 }

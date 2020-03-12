@@ -1,6 +1,7 @@
 package com.zyj.server.http;
 
 import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
@@ -24,9 +25,10 @@ public class HttpThread implements Runnable {
             while ((content = bufferedReader.readLine()) != null && !content.trim().isEmpty()) {
                 request.append(content).append("\n");
             }
-            System.out.println("request:----" + request.toString());
+            System.out.println("\n=========HttpThread================request================线程里面处理数据开始\n"
+                    + request.toString());
             //返回数据
-            byte[] response = new byte[0];
+            byte[] response = new byte[]{0};
             if (httpCallback != null) {
                 response = httpCallback.onResponse(request.toString());
             }
@@ -42,6 +44,14 @@ public class HttpThread implements Runnable {
             outputStream.write("\r\n".getBytes());
             outputStream.write(response);
 
+            //仅输出使用
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            baos.write(responseFirLine.getBytes());
+            baos.write(responseHeader.getBytes());
+            baos.write("\r\n".getBytes());
+            baos.write(response);
+            System.out.println("\n=========HttpThread================outputStream================线程里面处理数据逻辑完成，关闭socket\n"
+                    + baos.toString());
             mSocket.close();
         } catch (IOException e) {
             e.printStackTrace();

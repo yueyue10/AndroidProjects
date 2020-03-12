@@ -17,21 +17,33 @@ public class DH {
     }
 
     /**
-     * a-A方法
+     * a->A方法
+     * 通过a生成明文A的方法
      */
     public int getPublicKey() {
         return (int) (Math.pow(DH_G, mPriKey) % DH_P);
     }
 
     /**
-     * B-s方法
+     * a+B->s方法
+     * 通过自己的a和对方的明文B生成密钥s
      */
     public int getPrivateKey(long publicKey) {
         return (int) (Math.pow(publicKey, mPriKey) % DH_P);
     }
 
+    /**
+     * 方法同上
+     */
     public byte[] getPrivateKeyByte(long publicKey) {
-        return sha256((int) (Math.pow(publicKey, mPriKey) % DH_P));
+        int buf = (int) (Math.pow(publicKey, mPriKey) % DH_P);
+        return sha256(buf);
+    }
+
+    public byte[] getPrivateKeyByte(byte[] dhPubKeyServer) {
+        int key = DataUtils.byte2Int(dhPubKeyServer);
+        int buf = (int) (Math.pow(key, mPriKey) % DH_P);
+        return sha256(buf);
     }
 
     /**
@@ -49,4 +61,5 @@ public class DH {
         }
         return digest;
     }
+
 }

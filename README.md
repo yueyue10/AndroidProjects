@@ -10,6 +10,7 @@ android老项目收录
 ---
 | 项目名称                         | 项目介绍(点击查看详情)           |
 | --------                        |          :----:                |
+| NetEncrypto                     |     [网络安全加解密功能][20]                           |
 | KnowAll                         |     [生活百事APP][2]                           |
 | MPAndroidChartTest              |     [MPAndroidChart图表库封装][3]               |
 | MyWebView                       |     [html和原生的交互的Demo][4]                           |
@@ -30,24 +31,23 @@ android老项目收录
 | zyjWriteContacts                |     [通讯录、二维码识别、状态栏样式修改Demo][19]                           |
 
 
-[![AndroidProjects](https://starchart.cc/yueyue10/AndroidProjects.svg)](https://starchart.cc/yueyue10/AndroidProjects) 
-
 [1]:https://developer.qiniu.com/pili/sdk/1210/the-android-client-sdk
-[2]:https://github.com/yueyue10/AndroidProjects/tree/master/KnowAll
-[3]:https://github.com/yueyue10/AndroidProjects/tree/master/MPAndroidChartTest
-[4]:https://github.com/yueyue10/AndroidProjects/tree/master/MyWebView
-[5]:https://github.com/yueyue10/AndroidProjects/tree/master/ServiceDemo
-[6]:https://github.com/yueyue10/AndroidProjects/tree/master/zyjActivityAnimations
-[7]:https://github.com/yueyue10/AndroidProjects/tree/master/zyjBaiduMap
-[8]:https://github.com/yueyue10/AndroidProjects/tree/master/zyjCheckFile
-[9]:https://github.com/yueyue10/AndroidProjects/tree/master/zyjContactsDemo
-[10]:https://github.com/yueyue10/AndroidProjects/tree/master/zyjCoordinateView
-[11]:https://github.com/yueyue10/AndroidProjects/tree/master/zyjCustomView
-[12]:https://github.com/yueyue10/AndroidProjects/tree/master/zyjDaHuiDataDownload
-[13]:https://github.com/yueyue10/AndroidProjects/tree/master/zyjPingMufbl
-[14]:https://github.com/yueyue10/AndroidProjects/tree/master/zyjRasTest
-[15]:https://github.com/yueyue10/AndroidProjects/tree/master/zyjSocketTest
-[16]:https://github.com/yueyue10/AndroidProjects/tree/master/zyjTakePhoto
-[17]:https://github.com/yueyue10/AndroidProjects/tree/master/zyjTimeScroll
-[18]:https://github.com/yueyue10/AndroidProjects/tree/master/zyjWebViewTest
-[19]:https://github.com/yueyue10/AndroidProjects/tree/master/zyjWriteContacts
+[2]:KnowAll
+[3]:MPAndroidChartTest
+[4]:MyWebView
+[5]:ServiceDemo
+[6]:zyjActivityAnimations
+[7]:zyjBaiduMap
+[8]:zyjCheckFile
+[9]:zyjContactsDemo
+[10]:zyjCoordinateView
+[11]:zyjCustomView
+[12]:zyjDaHuiDataDownload
+[13]:zyjPingMufbl
+[14]:zyjRasTest
+[15]:zyjSocketTest
+[16]:zyjTakePhoto
+[17]:zyjTimeScroll
+[18]:zyjWebViewTest
+[19]:zyjWriteContacts
+[20]:NetEncrypto

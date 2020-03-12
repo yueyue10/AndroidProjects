@@ -6,24 +6,26 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 
 public class HttpRequest {
-    private Call mCall;
+    private static final String HANDSHAKE = "handshake";
+    private Request.Builder mBuilder;
 
     public HttpRequest(String url) {
-        OkHttpClient okHttpClient = new OkHttpClient();
-        Request request = new Request.Builder()
+        mBuilder = new Request.Builder()
                 .get()
-                .url(url)
-                .build();
-        mCall = okHttpClient.newCall(request);
+                .url(url);
+    }
+
+    // 发起握手请求，目的是与对方交换公钥
+    public void handShake(String pubKey, Callback callback) {
+        mBuilder.addHeader(HANDSHAKE, pubKey);
+        request(callback);
+        mBuilder.removeHeader(HANDSHAKE);
     }
 
     public void request(Callback callback) {
-        if (mCall != null) {
-            if (mCall.isExecuted()) {
-                mCall.clone().enqueue(callback);
-            } else {
-                mCall.enqueue(callback);
-            }
-        }
+        OkHttpClient okHttpClient = new OkHttpClient();
+        Call mCall = okHttpClient.newCall(mBuilder.build());
+        mCall.enqueue(callback);
     }
+
 }
