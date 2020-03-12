@@ -1,12 +1,15 @@
 #include <jni.h>
 #include <string>
+#include <people.h>
 
 extern "C" JNIEXPORT jstring JNICALL
 Java_com_zyj_jnidemo_JNITools_stringFromJNI(
         JNIEnv *env,
         jobject /* this */) {
     std::string hello = "Hello from C++ 啊";
-    return env->NewStringUTF(hello.c_str());
+    People people;
+//    return env->NewStringUTF(hello.c_str());
+    return env->NewStringUTF(people.getString().c_str());
 }
 extern "C"
 JNIEXPORT jint JNICALL
